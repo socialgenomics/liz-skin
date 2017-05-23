@@ -1,0 +1,49 @@
+/* ==========================================================================
+    #FONT STYLES
+   ========================================================================== */
+
+/*
+  Can't find what you're looking for?
+    For text-alignment & decoration see utilities/_type-setting.scss
+    For font colors see utilities/_color.scss
+*/
+
+/*
+  FONT-SIZE
+  Base:
+    fs = font-size
+
+  Modifiers:
+    0 = tiny
+    1 = small
+    2 = regular
+    3 = large
+    4 = x-large
+*/
+
+.fs0 { font-size: $font-size-tiny; }
+.fs1 { font-size: $font-size-small; }
+.fs2 { font-size: $font-size-regular; }
+.fs3 { font-size: $font-size-large; }
+.fs4 { font-size: $font-size-x-large; }
+
+/*
+  FONT-WEIGHT
+  Base:
+    fw = font-weight
+
+  Modifiers:
+   -thin = thin
+   -reg = regular
+   -med = medium
+   -bold = bold
+
+  Docs:
+    !important tags here required for Font Awesome inheritance
+    You always want these applied when declared
+*/
+
+.fw-thin { font-weight: $font-weight-thin !important; }
+.fw-reg  { font-weight: $font-weight-regular !important; }
+.fw-med  { font-weight: $font-weight-medium !important; }
+.fw-bold { font-weight: $font-weight-bold !important; }

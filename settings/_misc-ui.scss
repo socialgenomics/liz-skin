@@ -1,0 +1,21 @@
+/* ========================================================================
+    #MISC UI
+   ======================================================================== */
+
+/*
+  ANIMATION
+*/
+$global-transition :   all 300ms ease-in-out !default;
+
+/*
+  BORDER STYLES
+*/
+
+$border-color: $color-overlay !default;
+$border-width: 1px !default;
+$border-radius: 2px !default;
+
+/*
+  BOX-SHADOW
+*/
+$global-box-shadow:       0 2px 3px 0 rgba(0, 0, 0, .16), 0 2px 5px 0 rgba(0, 0, 0, .12) !default;

@@ -1,0 +1,44 @@
+/* ==========================================================================
+    #DISPLAY
+   ========================================================================== */
+
+.block        { display: block; }
+.inline       { display: inline; }
+.inline-block { display: inline-block; }
+.table        { display: table; }
+.table-cell   { display: table-cell; }
+
+/*
+  HIDE
+  Base:
+    hide = applies display: none;
+
+  Modifiers:
+   -s = on small viewport widths
+   -m = on medium viewport widths
+   -l = on large viewport widths
+   -w = on wide viewport widths
+*/
+
+.hide { display: none !important; }
+
+.hide-s {
+  @media (max-width: $breakpoint-small) {
+    display: none !important;
+  }
+}
+.hide-m {
+  @media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
+}
+.hide-l {
+  @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+    display: none !important;
+  }
+}
+.hide-w {
+  @media (min-width: $breakpoint-large) {
+    display: none !important;
+  }
+}

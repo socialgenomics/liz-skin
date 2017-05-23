@@ -1,0 +1,80 @@
+/* ========================================================================
+    #BACKGROUND COLORS
+   ======================================================================== */
+
+/*
+  FONT COLORS
+  Base:
+    fc = (font-)color
+
+  Modifiers:
+   -primary
+   -secondary
+   -tertiary
+   -<color-name>
+
+    Dark-Theme:
+      Nesting in a .theme-dark parent will output white color text
+*/
+
+.fc-primary   { color: $primary-opacity-black; }
+.fc-secondary { color: $secondary-opacity-black; }
+.fc-tertiary  { color: $tertiary-opacity-black; }
+
+.theme-dark {
+  .fc-primary   { color: $primary-opacity-white; }
+  .fc-secondary { color: $secondary-opacity-white; }
+  .fc-tertiary  { color: $tertiary-opacity-white; }
+}
+
+.fc-teal   { color: $color-primary-teal; }
+.fc-red    { color: $color-primary-red; }
+.fc-yellow { color: $color-primary-yellow; }
+.fc-blue   { color: $color-primary-blue; }
+.fc-green  { color: $fruit-salad; }
+.fc-white  { color: $primary-opacity-white; }
+
+/*
+  BACKGROUND COLORS
+  Base:
+    bc = background-color
+
+  Modifiers:
+   -<color-name>
+*/
+
+.bc-white           { background-color: $color-white; }
+.bc-off-white       { background-color: $color-off-white; }
+.bc-very-light-grey { background-color: $color-very-light-grey; }
+.bc-light-grey      { background-color: $color-light-grey; }
+.bc-mid-grey        { background-color: $color-mid-grey; }
+.bc-dark-grey       { background-color: $color-dark-grey; }
+.bc-black           { background-color: $color-black; }
+
+.bc-overlay { background-color: $color-overlay; }
+
+/*
+  BRAND COLORS
+*/
+
+.bc-primary-teal   { background-color: $color-primary-teal; }
+.bc-primary-red    { background-color: $color-primary-red; }
+.bc-primary-yellow { background-color: $color-primary-yellow; }
+.bc-primary-blue   { background-color: $color-primary-blue; }
+
+/*
+  BORDER COLOR
+*/
+
+.border-teal   { border-color: $color-primary-teal; }
+.border-red    { border-color: $color-primary-red; }
+.border-yellow { border-color: $color-primary-yellow; }
+.border-blue   { border-color: $color-primary-blue; }
+.border-grey   { border-color: $secondary-opacity-black; }
+
+/*
+  SOCIAL MEDIA COLORS
+*/
+
+.fc-linkedin { color: $color-linkedin; }
+.fc-twitter  { color: $color-twitter;  }

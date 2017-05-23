@@ -1,0 +1,81 @@
+/* ========================================================================
+    #COLOR VARIABLES
+   ======================================================================== */
+
+/*
+  SHADES OF GRAY
+*/
+
+$white:      #ffffff;
+$alabaster:  #fcfcfc;
+$concrete:   #f3f3f3;
+$alto:       #d0d0d0;
+$dove-grey:  #717171;
+$mine-shaft: #3a3a3a;
+$black:      #000000;
+
+$color-white:           $white;
+$color-off-white:       $alabaster;
+$color-very-light-grey: $concrete;
+$color-light-grey:      $alto;
+$color-mid-grey:        $dove-grey;
+$color-dark-grey:       $mine-shaft;
+$color-black:           $black;
+
+/*
+  DEGREES OF BLACK/WHITE - OPACITY
+  Docs:
+    Use opacity (rather than a shade of grey) wherever you are
+    overlaying elements - borders, text, dividers - on a colored background
+*/
+
+$primary-opacity-black   : rgba($color-black, 0.77);
+$secondary-opacity-black : rgba($color-black, 0.54);
+$tertiary-opacity-black  : rgba($color-black, 0.38);
+
+$primary-opacity-white   : rgba($color-white, 1);
+$secondary-opacity-white : rgba($color-white, 0.7);
+$tertiary-opacity-white  : rgba($color-white, 0.5);
+
+$color-overlay: rgba($color-black, 0.12);
+
+/*
+  BRAND COLORS
+*/
+
+$pelorous:        #45afb6;
+$sunglo:          #e57373;
+$golden-tainoi:   #ffc861;
+$havelock-blue:   #4a90e2;
+
+$color-primary-teal:    $pelorous;
+$color-primary-red:     $sunglo;
+$color-primary-yellow:  $golden-tainoi;
+$color-primary-blue:    $havelock-blue;
+
+/*
+  UI COLORS
+*/
+
+$ottoman:        #edfaf1;
+$killarney:      #2c683f;
+$pippin:         #ffe3e3;
+$tamarillio:     #921515;
+$apricot-white:  #fffdec;
+$chelsea-gem:    #996e00;
+
+$color-success-bg:  $ottoman;
+$color-success:     $killarney;
+
+$color-error-bg:    $pippin;
+$color-error:       $tamarillio;
+
+$color-info-bg:     $apricot-white;
+$color-warning:     $chelsea-gem;
+
+/*
+  SOCIAL MEDIA COLORS
+*/
+
+$color-linkedin : #0086bd;
+$color-twitter  : #55acee;

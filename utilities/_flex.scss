@@ -1,0 +1,71 @@
+/* ==========================================================================
+    #FLEX
+   ========================================================================== */
+
+/*
+  Docs:
+    Adapted from: https://github.com/basscss/basscss/blob/master/modules/flexbox/index.css
+*/
+
+.flex { display: flex; }
+
+/*
+  DIRECTION & WRAPPING
+  Docs:
+    Use on container
+*/
+
+.flex-column      { flex-direction: column; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-wrap        { flex-wrap: wrap; }
+
+/*
+  ALIGNMENT
+  Docs:
+    Use on container
+*/
+
+.justify-start   { justify-content: flex-start; }
+.justify-end     { justify-content: flex-end; }
+.justify-center  { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+
+.items-start    { align-items: flex-start; }
+.items-end      { align-items: flex-end; }
+.items-center   { align-items: center; }
+.items-baseline { align-items: baseline; }
+.items-stretch  { align-items: stretch; }
+
+/*
+  ALIGNMENT
+  Docs:
+    Use on child elements
+*/
+
+.content-start   { align-content: flex-start; }
+.content-end     { align-content: flex-end; }
+.content-center  { align-content: center; }
+.content-between { align-content: space-between; }
+.content-around  { align-content: space-around; }
+.content-stretch { align-content: stretch; }
+
+.self-start    { align-self: flex-start; }
+.self-end      { align-self: flex-end; }
+.self-center   { align-self: center; }
+.self-baseline { align-self: baseline; }
+.self-stretch  { align-self: stretch; }
+
+/*
+  OTHER HELPERS
+  Docs:
+    Use on child elements
+*/
+
+.flex-grow { flex-grow: 1; }
+.flex-shrink-none { flex-shrink: 0; }
+.flex-auto {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+}

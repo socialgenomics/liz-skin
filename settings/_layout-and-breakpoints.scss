@@ -1,0 +1,29 @@
+/* ========================================================================
+    #LAYOUT SETTINGS
+   ======================================================================== */
+
+/*
+  STRUCTURAL COMPONENT WIDTHS
+  Docs:
+    'Magic Numbers' used below are selected to work well in a 12-col grid
+    with a max-width of 960px
+*/
+
+$sidebar-width     : 320px !default;
+$data-card-width   : 304px !default;
+$grid-gutter-width : $global-spacing-unit;
+
+/*
+  BREAKPOINT DEFINITIONS
+  Docs:
+    All breakpoints are defined based on structural component widths
+      Mobile view = 1 data-card with a gutter each side (i.e. 2 gutters)
+      Tablet view = 2 data-cards with gutters on each side of container and
+      between data-cards (i.e. 3 gutters)
+*/
+
+$breakpoint-small  : $data-card-width + (2 * $grid-gutter-width);
+$breakpoint-medium : (2 * $data-card-width) + (3 * $grid-gutter-width);
+$breakpoint-large  : (3 * $data-card-width) + (4 * $grid-gutter-width);
+$breakpoint-wide   : $breakpoint-large + $sidebar-width;
+$breakpoint-huge   : $breakpoint-large + (2 * $sidebar-width);

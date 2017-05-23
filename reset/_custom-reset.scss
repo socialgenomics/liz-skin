@@ -1,0 +1,147 @@
+/* ==========================================================================
+    BASE ELEMENT STYLING
+   ========================================================================== */
+
+// TODO: review & split up this document
+
+html {
+  font-size: ($global-font-size / 16px) * 1em;
+  line-height: $global-line-height / $global-font-size;
+  overflow-y: scroll;
+  min-height: 100%;
+  color: $color-dark-grey;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased; // A bit opinionated: text is antialiased for more consistent rendering across Chrome & Safari
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $primary-font-stack;
+  @extend .fs1;
+}
+
+// Text
+/* ==================================== */
+/*
+  * h1 - h6 reset in favour of a component-based approach (see _components.type_setting.scss)
+  * > see article: http://csswizardry.com/2016/02/managing-typography-on-large-apps/
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  @extend .fc-primary;
+}
+
+p {
+	font-size: inherit;
+  @extend .fc-secondary;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary-blue;
+  cursor: pointer;
+}
+
+// remove mobile styling on iOS mobile devices
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+}
+
+// remove list-style as default
+// to apply bullet points, use o-list-bullet
+ul {
+  list-style: none;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
+input, textarea {
+  border-radius: $border-radius;
+  border: $border-width solid $border-color;
+  color: inherit;
+  font-size: $font-size-regular;
+  line-height: inherit;
+  outline: none;
+  padding: $spacing-unit-small;
+  width: 100%;
+}
+
+input {
+  height: $spacing-unit-x-large;
+}
+
+textarea {
+  height: $spacing-unit-x-large + $spacing-unit-x-large;
+  font-family: $primary-font-stack;
+}
+
+input[type="checkbox"] {
+  height: $spacing-unit-medium;
+}
+
+input::placeholder, textarea::placeholder {
+  @extend .fc-tertiary;
+}
+
+
+// Declare margins in the same direction
+/* ==================================== */
+/*
+ * helps maintain vertical rhythm
+ * avoids margin collapsing
+ * see csswizardry.com/2012/06/single-direction-margin-declarations
+*/
+
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, ol, ul,
+figure,
+hr,
+table,
+fieldset,
+.c-card {
+  margin-top: 0;
+  margin-bottom: $spacing-unit-large;
+}
+
+
+// Ensures consistent indentation on lists
+dd, ol, ul {
+  margin-left: $spacing-unit-large;
+}
+
+/*
+  IMAGES
+*/
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+
+img {
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+  max-height: 100%;
+}
+
+
+/**
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+
+img[width], /* [1] */
+img[height] {  /* [1] */
+  max-width: none;
+}

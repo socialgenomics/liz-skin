@@ -1,0 +1,43 @@
+/* ========================================================================
+    GRID WRAPPER
+   ======================================================================== */
+
+/*
+  Base:
+    .grid-wrapper = applies padding, centers the container
+
+  Modifier:
+    .grid-wrapper-fluid = Resizes smoothly, up to a maximum width ($breakpoint-large)
+    .grid-stepped = Resizes in discrete steps, based on breakpoints.
+
+  Docs:
+    To define a grid-wrapper, you apply two classes
+
+    Example:
+      <div class="grid-wrapper grid-wrapper-stepped">
+        <!-- content inside of the wrapper e.g. a search view -->
+      </div>
+*/
+
+.grid-wrapper {
+  padding: $spacing-unit-large;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-wrapper-fluid {
+  max-width: $breakpoint-large;
+}
+
+.grid-wrapper-stepped {
+  max-width: $breakpoint-small;
+  @media ( min-width: $breakpoint-medium) { max-width: $breakpoint-medium; }
+  @media ( min-width: $breakpoint-large ) { max-width: $breakpoint-large; }
+}
+
+.has-sidebar {
+  .grid-wrapper {
+    @media ( min-width: $breakpoint-wide) { margin-left: $sidebar-width; }
+    @media ( min-width: $breakpoint-huge) { margin-left: auto; }
+  }
+}

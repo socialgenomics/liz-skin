@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #LIST-INLINE
+   ========================================================================== */
+
+// Replace List Bullets
+/* ==================================== */
+
+.o-list-bullet {
+  margin-left: 0;
+  > li {
+    list-style: initial;
+  }
+}
+
+// List Inline
+/* ==================================== */
+// simply displays items on one line
+
+.o-list-inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+  .o-list-inline__item {
+    display: inline-block;
+  }
+
+// List Flush Left
+/* ==================================== */
+// removes padding and left margin from ul elements
+
+.o-list-flush-left {
+  margin-left: 0;
+  padding-left: 0;
+}

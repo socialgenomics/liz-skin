@@ -1,0 +1,35 @@
+/* ========================================================================
+    #TYPOGRAPHY VARIABLES
+   ======================================================================== */
+
+/*
+  FONT STACK
+*/
+$primary-font-stack: 'Roboto', sans-serif;
+
+/*
+  FONT-SIZE
+*/
+
+$global-font-size: 16px !default;
+
+$font-size-tiny    : 0.75rem !default; // by default, 12px
+$font-size-small   : 0.875rem !default; // by default, 14px
+$font-size-regular : 1rem !default; // by default, 16px
+$font-size-large   : 1.25rem !default; // by default, 20px
+$font-size-x-large : 2.5rem !default; // by default, 40px
+
+/*
+  FONT-WEIGHT
+*/
+
+$font-weight-thin    : 300 !default;
+$font-weight-regular : 400 !default;
+$font-weight-medium  : 500 !default;
+$font-weight-bold    : 700 !default;
+
+/*
+  MISC
+*/
+
+$global-line-height: 24px !default;
