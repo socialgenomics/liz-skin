@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased; // A bit opinionated: text is antialiased for more consistent rendering across Chrome & Safari
   -moz-osx-font-smoothing: grayscale;
   font-family: $primary-font-stack;
-  @extend .fs1;
+  font-size: $font-size-small;
 }
 
 // Text
@@ -30,12 +30,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   font-weight: 500;
-  @extend .fc-primary;
+  color: $primary-opacity-black;
 }
 
 p {
 	font-size: inherit;
-  @extend .fc-secondary;
+  color: $secondary-opacity-black;
 }
 
 a {
@@ -87,7 +87,7 @@ input[type="checkbox"] {
 }
 
 input::placeholder, textarea::placeholder {
-  @extend .fc-tertiary;
+  color: $tertiary-opacity-black;
 }
 
 
