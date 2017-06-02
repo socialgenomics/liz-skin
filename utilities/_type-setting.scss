@@ -71,3 +71,13 @@
 
 .text-line-break { word-break: break-all; }
 .text-line-keep { word-break: keep-all; } 
+
+/*
+  HYPHENS
+*/
+.hyphens-auto {
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
