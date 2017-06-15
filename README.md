@@ -47,7 +47,7 @@ Each file has inline documentation for further detail. Outlined below is the inf
 
 ##### Margin, Padding & Spacing
 
-The spacing scale is defined as follows (see [`\_spacing.scss`](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss)):
+The spacing scale is defined as follows (see [`_spacing.scss`](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss)):
 
 ```
 $global-spacing-unit    : 24px !default;
@@ -86,7 +86,9 @@ Media Query Extensions (mobile-first):
  -l = at large viewports
    
 e.g. 
+
 .mb0 { margin-bottom: 0; }
+
 .px3 { 
   padding-left: $spacing-unit-medium ; // or 12px
   padding-right: $spacing-unit-medium ; // or 12px
