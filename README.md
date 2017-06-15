@@ -18,13 +18,19 @@ In this `main.scss` import sheet, replace each `../path/to/node_modules` with th
 
 ## What's what?
 
-#### `settings` directory
+#### [`settings`](https://github.com/repositive/liz-skin/tree/master/settings) directory
 
 The settings directory doesn't output any CSS. It contains only variables. Some settings (relating to [color](https://github.com/repositive/liz-skin/blob/master/settings/_color.scss), [typography](https://github.com/repositive/liz-skin/blob/master/settings/_typography.scss) & other [misc-ui](https://github.com/repositive/liz-skin/blob/master/settings/_misc-ui.scss)) are specific to Repositive, its brand & styleguide. Others (e.g. [spacing](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) & [layout-and-breakpoints](https://github.com/repositive/liz-skin/blob/master/settings/_layout-and-breakpoints.scss)) are more agnostic to design. All of these agnostic variables are flagged as `!default` - edit / override with your spacing scale as you desire.
 
+#### [`reset`](https://github.com/repositive/liz-skin/tree/master/reset) directory
 
+In the reset directory are two common/generic resets:
+1. a [box-sizing reset](https://github.com/repositive/liz-skin/blob/master/reset/_box-sizing.scss)
+2. [`normalize.css`](https://github.com/repositive/liz-skin/blob/master/reset/_normalize.scs
 
-#### `utilities` directory
+... as well as a highly opinionated Repositive reset, called [`_custom-reset.scss`](https://github.com/repositive/liz-skin/blob/master/reset/_custom-reset.scss).
+
+#### [`utilities`](https://github.com/repositive/liz-skin/tree/master/utilities) directory
 
 Utility classes for setting:
 
