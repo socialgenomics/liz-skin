@@ -1,20 +1,42 @@
-# liz-skin
+# Liz-Skin
 
+An opinionated (\*), functional SCSS library developed by [Repositive.io](https://repositive.io/). \*At this time, the framework contains colour variables, spacing units and other misc-ui variables. These are all flagged as `!default` however, so you can override with your color flavours of choice.
 
-### Changelog - to v1.0.0
+## Getting Started
 
-* No `.u-` namespacing. There is a 'gotacha' - some old classes in Discover's custom directory still have `.u-`, I will tidy this ASAP.
-* Revised spacing scale: deleted the 96px space, introduced the 3px space:
-```scss
-.p0 {} // = 0px padding
-.p1 {} // = 3px padding
-.p2 {} // = 6px padding
-.p3 {} // = 12px padding
-.p4 {} // = 24px padding
-.p5 {} // = 48px padding
-```
-* Inline documentation.
-* More responsiveness. Use the suffixes `-s`,`-m`, `-l`, `-w` (note: not every suffix is available for every utility) to apply different margins, paddings, displays (show/hide) on different media breakpoints.
-* Some simplified syntax: e.g. `.block`, `.inline-block`, `.absolute`, `.relative`, `.circle`, `.square`.
-* Everything relating to font has a 'f' in front of it. So `.u-tc-primary` is replaced by`.fc-primary`, to be consistent with font-size and font-weight.
-* No arbitrary image width classes (`.u-w4`). See `icon.scss` for new width classes, designed around common avatar sizes. It might not be the perfect system, but it's an improvement.
+##### Install with npm:
+
+`npm install @repositive/liz-skin --save`
+
+##### Setup your `main.scss` import sheet
+
+Copy `template.import.scss` ([link](https://github.com/repositive/liz-skin/blob/master/template.import.scss)) into your `styles` directory. Rename it `main.scss` or whatever you want to call it.
+
+##### Correct path to `node_modules`
+
+In this `main.scss` import sheet, replace each `../path/to/node_modules` with the correct path to your `node_modules` directory.
+
+## What's what?
+
+##### `utilities` directory
+
+Utility classes for setting:
+
+* [border styles](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss)
+* [color](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) (background colors, border colors & font-colors)
+* [cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss)
+* [display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) (includes classes for responsively hiding UI)
+* [flex layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss)
+* [font styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) (font-size & font-weight)
+* [icon](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) widths
+* [margin](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss)
+* [overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss)
+* [padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss)
+* [position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) (also includes z-index scale)
+* [type-setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) (alignment, line-breaks & text-decoration)
+
+See each file for inline documentation.
+
+## Acknowledgements
+
+This library has borrowed heavily from [BassCSS](http://basscss.com/) by [Brent Jackson](http://jxnblk.com/). It also includes the simple [toast grid](https://daneden.github.io/Toast/) developed by [Dan Eden](https://daneden.me/).
