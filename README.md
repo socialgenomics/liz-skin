@@ -1,6 +1,6 @@
 # Liz-Skin
 
-An opinionated (\*), functional SCSS library developed by [Repositive.io](https://repositive.io/). \*At this time, the framework contains colour variables, spacing units and other misc-ui variables. These are all flagged as `!default` however, so you can override with your color flavours of choice.
+An opinionated, functional SCSS library developed by [Repositive.io](https://repositive.io/). 
 
 ## Getting Started
 
