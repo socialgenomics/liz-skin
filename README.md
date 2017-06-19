@@ -22,6 +22,8 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 
 ## QuickFire Docs
 
+Click through to each file individually for more extensive inline documentation.
+
 #### Utility Functions
 * [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add borders & border radii `e.g. "border-bottom rounded"`
 * [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. "fc-primary"`
@@ -36,6 +38,9 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 * [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, apply z-indices & basic alignment `e.g. "absolute z5 top-0"` 
 * [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & casing `e.g. "ta-center tt-uppercase td-underline"` 
 
+## Components
+
+* [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss)
 
 
 ## Directory Structure
@@ -66,63 +71,7 @@ In here, you'll find a:
 * [balloons](https://github.com/repositive/liz-skin/blob/liz-skin-documentation/components/_balloons.scss) - an external library for nice tooltips
 
 
-#### [`utilities`](https://github.com/repositive/liz-skin/tree/master/utilities) directory
-
-## Usage
-
-Each file has inline documentation for further detail. Outlined below is the information you'll most often need to know.
-
-#### Margin, Padding & Spacing
-
-The spacing scale is defined as follows (see [`_spacing.scss`](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss)):
-
-```
-$global-spacing-unit    : 24px !default;
-
-$spacing-factor-tiny    : 0.125 !default; // by default, 3px
-$spacing-factor-small   : 0.25 !default; // by default, 6px
-$spacing-factor-medium  : 0.5 !default; // by default, 12px
-$spacing-factor-large   : 1 !default; // by default, 24px
-$spacing-factor-x-large : 2 !default; // by default, 48px
-```
-
-This scale is implemented in [`_margin.scss`](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss) & [`padding.scss`](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) using the following class syntax:
-
-```
-Base:
-  p = padding
-  m = margin
-
-Modifiers:
-  x = horizontal
-  y = vertical
-  t = top
-  b = bottom
-  l = left
-  r = right
-
-  0 = none
-  1 = tiny
-  2 = small
-  3 = medium
-  4 = large
-  5 = x-large
-
-Media Query Extensions (mobile-first):
- -m = at medium viewports
- -l = at large viewports
-
-e.g.
-
-.mb0 { margin-bottom: 0; }
-
-.px3 {
-  padding-left: $spacing-unit-medium ; // or 12px
-  padding-right: $spacing-unit-medium ; // or 12px
-}
-```
-
-## Want to make/recommend changes?
+## Contribute
 An issue with taking a functional CSS approach is that developers have to learn a new CSS API. It's therefore important to make the naming of utilities as intuitive as possible. Please open a PR if you want to suggest edits to any utility names. 
 
 ## Acknowledgements
