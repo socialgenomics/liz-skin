@@ -30,7 +30,7 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 * [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. "flex flex-wrap items-center justify-center"`
 * [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font sizes & font-weights `e.g. "fs2 fw-med"`
 * [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon & avatar sizes `e.g. "icon-medium"`
-* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/margin.scss) - Apply spacing (margin-right & -bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "mr3"`
+* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss) - Apply spacing (margin-right & -bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "mr3"`
 * [Overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss) - Set overflow behaviour `e.g. "overflow-hidden"`
 * [Padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) - Apply spacing around an element's content. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "px3"`
 * [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, apply z-indices & basic alignment `e.g. "absolute z5 top-0"` 
