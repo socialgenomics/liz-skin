@@ -25,7 +25,7 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 Click through to each file individually for more extensive inline documentation.
 
 #### Utility Functions
-* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add borders & border radii `e.g. "border-bottom rounded"`
+* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Apply borders & border radii `e.g. "border-bottom rounded"`
 * [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. "fc-primary"`
 * [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. "cursor-pointer"` 
 * [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. "block hide-s hide-m"`
