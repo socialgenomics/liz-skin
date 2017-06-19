@@ -30,7 +30,7 @@ Click through to each file individually for more extensive inline documentation.
 * [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. "cursor-pointer"` 
 * [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. "block hide-s hide-m"`
 * [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. "flex flex-wrap items-center justify-center"`
-* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font sizes & font-weights `e.g. "fs2 fw-med"`
+* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font size weight `e.g. "fs2 fw-med"`
 * [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon & avatar sizes `e.g. "icon-medium"`
 * [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss) - Apply spacing (margin-right & -bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "mr3"`
 * [Overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss) - Set overflow behaviour `e.g. "overflow-hidden"`
@@ -41,7 +41,7 @@ Click through to each file individually for more extensive inline documentation.
 ## Components
 
 * [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss)
-
+* [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss)
 
 ## Directory Structure
 
