@@ -23,9 +23,9 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 ## QuickFire Docs
 
 #### Utility Functions
-* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add borders & border radii `e.g. class="border-bottom rounded"`
-* [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. class="fc-primary"`
-* [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. class="cursor-pointer"` 
+* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add borders & border radii `e.g. "border-bottom rounded"`
+* [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. "fc-primary"`
+* [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. "cursor-pointer"` 
 * [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. class="block hide-s hide-m"`
 * [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. class="flex flex-wrap items-center justify-center"`
 * [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font sizes & font-weights `e.g. class="fs2 fw-med"`
