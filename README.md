@@ -4,17 +4,18 @@ An opinionated, functional SCSS library developed by [Repositive.io](https://rep
 
 ## Getting Started
 
-#### Install with npm:
+1. **Install with npm:** 
 
 `npm install @repositive/liz-skin --save`
 
-#### Setup your `main.scss` import sheet
 
-Copy `template.import.scss` ([link](https://github.com/repositive/liz-skin/blob/master/template.import.scss)) into your `styles` directory. Rename it `main.scss` (or `app.scss` or whatever).
+2. **Setup your `main.scss` import sheet:** 
 
-#### Correct path to `node_modules`
+Copy [`template.import.scss`](https://github.com/repositive/liz-skin/blob/master/template.import.scss) into your `styles` directory. Rename it `app.scss`.
 
-In this `main.scss` import sheet, replace each `../path/to/node_modules` with the correct path to your `node_modules` directory.
+3. **In your app.scss, correct the `..path/to/node_modules`**
+
+Find & replace each `..path/to/node_modules` with the correct path to your `node_modules` directory.
 
 #### And you're off...
 
@@ -118,6 +119,9 @@ e.g.
   padding-right: $spacing-unit-medium ; // or 12px
 }
 ```
+
+## Want to make/recommend changes?
+An issue with taking a functional CSS approach is that developers have to learn a new CSS API. It's therefore important to make the naming of utilities as intuitive as possible. Please open a PR if you want to suggest edits to any utility names. 
 
 ## Acknowledgements
 
