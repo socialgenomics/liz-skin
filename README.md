@@ -26,15 +26,15 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 * [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add borders & border radii `e.g. "border-bottom rounded"`
 * [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. "fc-primary"`
 * [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. "cursor-pointer"` 
-* [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. class="block hide-s hide-m"`
-* [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. class="flex flex-wrap items-center justify-center"`
-* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font sizes & font-weights `e.g. class="fs2 fw-med"`
-* [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon & avatar sizes `e.g. class="icon-medium"`
-* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/margin.scss) - Apply spacing (to the right & bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. class="mr3"`
-* [Overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss) - Set overflow behaviour `e.g. class="overflow-hidden"`
-* [Padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) - Apply spacing around an element's content. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. class="px3"`
-* [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, apply z-indices & basic alignment `e.g. class="absolute z5 top-0"` 
-* [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & casing `e.g. class="ta-center tt-uppercase td-underline"` 
+* [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. "block hide-s hide-m"`
+* [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. "flex flex-wrap items-center justify-center"`
+* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font sizes & font-weights `e.g. "fs2 fw-med"`
+* [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon & avatar sizes `e.g. "icon-medium"`
+* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/margin.scss) - Apply spacing (margin-right & -bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "mr3"`
+* [Overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss) - Set overflow behaviour `e.g. "overflow-hidden"`
+* [Padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) - Apply spacing around an element's content. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "px3"`
+* [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, apply z-indices & basic alignment `e.g. "absolute z5 top-0"` 
+* [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & casing `e.g. "ta-center tt-uppercase td-underline"` 
 
 
 
@@ -67,21 +67,6 @@ In here, you'll find a:
 
 
 #### [`utilities`](https://github.com/repositive/liz-skin/tree/master/utilities) directory
-
-Utility classes for setting:
-
-* [border styles](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss)
-* [color](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - background colors, border colors & font-colors
-* [cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss)
-* [display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - includes classes for responsively hiding UI
-* [flex layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss)
-* [font styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - font-size & font-weight
-* [icon](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) widths
-* [margin](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss)
-* [overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss)
-* [padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss)
-* [position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - also includes z-index scale
-* [type-setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - alignment, line-breaks & text-decoration
 
 ## Usage
 
