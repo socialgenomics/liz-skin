@@ -13,7 +13,7 @@ An opinionated, functional SCSS library developed by [Repositive.io](https://rep
 
 Copy [`template.import.scss`](https://github.com/repositive/liz-skin/blob/master/template.import.scss) into your `styles` directory. Rename it `app.scss`.
 
-**3. In your app.scss, correct the `..path/to/node_modules`**
+**3. In `app.scss`, correct the `..path/to/node_modules`**
 
 Find & replace each `..path/to/node_modules` with the correct path to your `node_modules` directory.
 
