@@ -4,20 +4,20 @@ An opinionated, functional SCSS library developed by [Repositive.io](https://rep
 
 ## Getting Started
 
-1. **Install with npm:** 
+**1. Install with npm:** 
 
 `npm install @repositive/liz-skin --save`
 
 
-2. **Setup your `main.scss` import sheet:** 
+**2. Setup your `main.scss` import sheet:** 
 
 Copy [`template.import.scss`](https://github.com/repositive/liz-skin/blob/master/template.import.scss) into your `styles` directory. Rename it `app.scss`.
 
-3. **In your app.scss, correct the `..path/to/node_modules`**
+**3. In your app.scss, correct the `..path/to/node_modules`**
 
 Find & replace each `..path/to/node_modules` with the correct path to your `node_modules` directory.
 
-#### And you're off...
+**4. Do your pre-flight checks and you're off**
 
 Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and you're good to go.
 
