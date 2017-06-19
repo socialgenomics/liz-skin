@@ -8,10 +8,9 @@ An opinionated, functional SCSS library developed by [Repositive.io](https://rep
 
 `npm install @repositive/liz-skin --save`
 
+**2. Setup your `app.scss` import document:** 
 
-**2. Setup your `main.scss` import sheet:** 
-
-Copy [`template.import.scss`](https://github.com/repositive/liz-skin/blob/master/template.import.scss) into your `styles` directory. Rename it `app.scss`.
+Add the [`template.import.scss`](https://github.com/repositive/liz-skin/blob/master/template.import.scss) file into your `styles` directory. Rename it `app.scss`.
 
 **3. In `app.scss`, correct the `..path/to/node_modules`**
 
@@ -21,7 +20,25 @@ Find & replace each `..path/to/node_modules` with the correct path to your `node
 
 Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and you're good to go.
 
-## What's what?
+## QuickFire Docs
+
+#### Utility Functions
+* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add borders & border radii `e.g. class="border-bottom rounded"`
+* [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. class="fc-primary"`
+* [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. class="cursor-pointer"` 
+* [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. class="block hide-s hide-m"`
+* [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. class="flex flex-wrap items-center justify-center"`
+* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font sizes & font-weights `e.g. class="fs2 fw-med"`
+* [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon & avatar sizes `e.g. class="icon-medium"`
+* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/margin.scss) - Apply spacing (to the right & bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. class="mr3"`
+* [Overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss) - Set overflow behaviour `e.g. class="overflow-hidden"`
+* [Padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) - Apply spacing around an element's content. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. class="px3"`
+* [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, apply z-indices & basic alignment `e.g. class="absolute z5 top-0"` 
+* [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & casing `e.g. class="ta-center tt-uppercase td-underline"` 
+
+
+
+## Directory Structure
 
 #### [`settings`](https://github.com/repositive/liz-skin/tree/master/settings) directory
 
