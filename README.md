@@ -40,11 +40,11 @@ More extensive documentation can be found in each file individually.
 
 ## Components
 
-* [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss) - Sets responsive width & padding and centers a grid. Two resizing options: `-fluid` or `stepped` `e.g. "grid-wrapper grid-wrapper-fluid`
+* [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss) - Sets responsive width & padding and centers a grid. Two resizing options: `-fluid` or `-stepped` `e.g. "grid-wrapper grid-wrapper-fluid"`
 * [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss) - Dan Eden's Toast Grid. See [full docs](https://github.com/daneden/toast) `e.g. "grid__col grid__col--1-of-3`
 * [Balloon Tooltips](https://github.com/repositive/liz-skin/blob/master/components/_balloons.scss) - Nice tooltips by Claudio Holanda. See [full docs](https://kazzkiq.github.io/balloon.css/) `e.g. data-balloon="I'm a tooltip" data-balloon-pos="up"`
 
-## Directory Structure
+## Other Directories
 
 #### [`settings`](https://github.com/repositive/liz-skin/tree/master/settings) directory
 
@@ -56,25 +56,13 @@ In the reset directory are two common/generic resets:
 * [box-sizing reset](https://github.com/repositive/liz-skin/blob/master/reset/_box-sizing.scss)
 * [normalize.css](https://github.com/repositive/liz-skin/blob/master/reset/_normalize.scss)
 
-There is also a highly opinionated reset file used by Repositive to reset the hell out of HTML elements:
+There is also a highly opinionated reset file to apply some base Repositive styles:
 
-* [custom-reset](https://github.com/repositive/liz-skin/blob/master/reset/_custom-reset.scss) - users outside of Repositive may prefer to delete this file
-
-#### [`components`](https://github.com/repositive/liz-skin/tree/liz-skin-documentation/components) directory
-
-These could probably have a better name than "components" - they aren't components as we tend to think of UI components, more just amped up utility classes.
-
-In here, you'll find a:
-
-* [grid system](https://github.com/repositive/liz-skin/blob/liz-skin-documentation/components/_grid.scss) - slightly customised Toast Grid - see full documentation [here](https://github.com/daneden/toast)
-* [grid wrapper](https://github.com/repositive/liz-skin/blob/liz-skin-documentation/components/_grid-wrapper.scss) - defines the widths & padding of the grid at different viewports widths
-* [list styles](https://github.com/repositive/liz-skin/blob/liz-skin-documentation/components/_list.scss) - will be utilities as soon as I get around to it
-* [balloons](https://github.com/repositive/liz-skin/blob/liz-skin-documentation/components/_balloons.scss) - an external library for nice tooltips
-
+* [custom-reset](https://github.com/repositive/liz-skin/blob/master/reset/_custom-reset.scss) - users outside of Repositive may prefer not to import this file
 
 ## Contribute
 An issue with taking a functional CSS approach is that developers have to learn a new CSS API. It's therefore important to make the naming of utilities as intuitive as possible. Please open a PR if you want to suggest edits to any utility names. 
 
 ## Acknowledgements
 
-This library has borrowed heavily from [BassCSS](http://basscss.com/) by [Brent Jackson](http://jxnblk.com/). It also includes the simple [toast grid](https://daneden.github.io/Toast/) developed by [Dan Eden](https://daneden.me/).
+This library has borrowed heavily from [BassCSS](http://basscss.com/) by [Brent Jackson](http://jxnblk.com/). It also includes the simple [toast grid](https://daneden.github.io/Toast/) developed by [Dan Eden](https://daneden.me/) and [Balloon CSS](https://kazzkiq.github.io/balloon.css/) by [Claudia Holanda](https://github.com/kazzkiq).
