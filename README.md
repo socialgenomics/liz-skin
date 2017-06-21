@@ -38,7 +38,7 @@ More extensive documentation can be found in each file individually.
 * [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, 'pin' to top/bottom/left/right, set z-index `e.g. "absolute z5 top-0 left-0"` 
 * [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & upper-/lowercase `e.g. "ta-center td-underline tt-uppercase"` 
 
-## Components
+#### Components
 
 * [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss) - Sets responsive width & padding and centers a grid. Two resizing options: `-fluid` or `-stepped` `e.g. "grid-wrapper grid-wrapper-fluid"`
 * [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss) - Dan Eden's Toast Grid. See [full docs](https://github.com/daneden/toast) `e.g. "grid__col grid__col--1-of-3`
