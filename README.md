@@ -41,7 +41,13 @@ More extensive documentation can be found in each file individually.
 #### Components
 
 * [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss) - Sets responsive width & padding and centers a grid. Two resizing options: `-fluid` or `-stepped` `e.g. "grid-wrapper grid-wrapper-fluid"`
-* [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss) - Dan Eden's Toast Grid. See [full docs](https://github.com/daneden/toast) `e.g. "grid__col grid__col--1-of-3"`
+* [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss) - Dan Eden's Toast Grid. See [full docs](https://github.com/daneden/toast) 
+  ```html
+  <!-- Nest all grid__col inside of a .grid -->
+  <div class="grid">
+    <div class="grid__col grid__col--1-of-3" />
+   </div>
+  ```
 * [Balloon Tooltips](https://github.com/repositive/liz-skin/blob/master/components/_balloons.scss) - Nice tooltips by Claudio Holanda. See [full docs](https://kazzkiq.github.io/balloon.css/) `e.g. data-balloon="I'm a tooltip" data-balloon-pos="up"`
 
 ## Other Directories
