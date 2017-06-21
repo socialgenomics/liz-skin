@@ -22,26 +22,27 @@ Compile your SCSS to CSS, check you've`<link>`-ed your stylesheet correctly and 
 
 ## QuickFire Docs
 
-Click through to each file individually for more extensive inline documentation.
+More extensive documentation can be found in each file individually.
 
 #### Utility Functions
-* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Apply borders & border radii `e.g. "border-bottom rounded"`
-* [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font color `fc-`, background color `bc-` & border color `e.g. "fc-primary"`
-* [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Adjust default cursors `e.g. "cursor-pointer"` 
-* [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Apply display types & responsively hide elements `e.g. "block hide-s hide-m"`
-* [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layouts with flexbox `e.g. "flex flex-wrap items-center justify-center"`
-* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font size weight `e.g. "fs2 fw-med"`
-* [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon & avatar sizes `e.g. "icon-medium"`
-* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss) - Apply spacing (margin-right & -bottom only) outside of an element's border. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "mr3"`
+* [Borders](https://github.com/repositive/liz-skin/blob/master/utilities/_border.scss) - Add a border & border radius `e.g. "border-bottom rounded"`
+* [Colors](https://github.com/repositive/liz-skin/blob/master/utilities/_color.scss) - Apply font `fc-`, background `bc-` & border `border-` colors `e.g. "fc-primary bc-off-white"`
+* [Cursors](https://github.com/repositive/liz-skin/blob/master/utilities/_cursor.scss) - Specify cursor style `e.g. "cursor-pointer"` 
+* [Display](https://github.com/repositive/liz-skin/blob/master/utilities/_display.scss) - Set display behaviour, responsively hide elements `e.g. "block hide-s hide-m"`
+* [Flex Layout](https://github.com/repositive/liz-skin/blob/master/utilities/_flex.scss) - Define layout with flexbox `e.g. "flex flex-wrap items-center justify-center"`
+* [Font Styles](https://github.com/repositive/liz-skin/blob/master/utilities/_font-styles.scss) - Set font size & weight `e.g. "fs2 fw-med"`
+* [Icon Sizing](https://github.com/repositive/liz-skin/blob/master/utilities/_icon.scss) - Set icon size `e.g. "icon-medium"`
+* [Margin](https://github.com/repositive/liz-skin/blob/master/utilities/_margin.scss) - Apply margin (margin-right & -bottom only). Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "mb0 mr3"`
 * [Overflow](https://github.com/repositive/liz-skin/blob/master/utilities/_overflow.scss) - Set overflow behaviour `e.g. "overflow-hidden"`
-* [Padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) - Apply spacing around an element's content. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "px3"`
-* [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, apply z-indices & basic alignment `e.g. "absolute z5 top-0"` 
-* [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & casing `e.g. "ta-center tt-uppercase td-underline"` 
+* [Padding](https://github.com/repositive/liz-skin/blob/master/utilities/_padding.scss) - Apply padding. Uses the [spacing scale](https://github.com/repositive/liz-skin/blob/master/settings/_spacing.scss) `e.g. "pb4 px3"`
+* [Position](https://github.com/repositive/liz-skin/blob/master/utilities/_position.scss) - Set position behaviour, 'pin' to top/bottom/left/right, set z-index `e.g. "absolute z5 top-0 left-0"` 
+* [Type Setting](https://github.com/repositive/liz-skin/blob/master/utilities/_type-setting.scss) - Adjust text-alignment, decoration & upper-/lowercase `e.g. "ta-center td-underline tt-uppercase"` 
 
 ## Components
 
-* [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss)
-* [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss)
+* [Grid Wrapper](https://github.com/repositive/liz-skin/blob/master/components/_grid-wrapper.scss) - Sets responsive width & padding and centers a grid. Two resizing options: `-fluid` or `stepped` `e.g. "grid-wrapper grid-wrapper-fluid`
+* [Grid System](https://github.com/repositive/liz-skin/blob/master/components_toast-grid.scss) - Dan Eden's Toast Grid. See [full docs](https://github.com/daneden/toast) `e.g. "grid__col grid__col--1-of-3`
+* [Balloon Tooltips](https://github.com/repositive/liz-skin/blob/master/components/_balloons.scss) - Nice tooltips by Claudio Holanda. See [full docs](https://kazzkiq.github.io/balloon.css/) `e.g. data-balloon="I'm a tooltip" data-balloon-pos="up"`
 
 ## Directory Structure
 
