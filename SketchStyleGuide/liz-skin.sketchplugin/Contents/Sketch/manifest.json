@@ -1,0 +1,20 @@
+{
+  "name": "Liz Skin Sketch Styleguide",
+  "version": "1.0",
+  "commands": [
+    {
+      "name": "Liz Skin",
+      "identifier": "main",
+      "script": "create-styleguide.js"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "main"
+    ]
+  },
+  "identifier": "SketchStyleGuide",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}

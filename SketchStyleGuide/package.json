@@ -1,0 +1,23 @@
+{
+  "name": "SketchStyleGuide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "skpm-build",
+    "render": "skpm-build --watch --run"
+  },
+  "skpm": {
+    "main": "liz-skin.sketchplugin",
+    "manifest": "src/manifest.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@skpm/builder": "^0.5.9"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-primitives": "^0.6.0",
+    "react-sketchapp": "^2.0.0",
+    "react-test-renderer": "^16.4.1"
+  }
+}
