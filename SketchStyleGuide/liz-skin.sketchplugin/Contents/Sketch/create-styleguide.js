@@ -102,8 +102,40 @@ var exports =
 __webpack_require__.r(__webpack_exports__);
 var config = {
   colors: {
-    "red": "#aa0000",
-    "blue": "#0000aa"
+    'transparent': 'transparent',
+    'black-primary': 'rgba(0,0,0, 0.87)',
+    'black-secondary': 'rgba(0,0,0, 0.6)',
+    'black-tertiary': 'rgba(0,0,0, 0.4)',
+    'white-primary': 'rgba(255,255,255, 1)',
+    'white-secondary': 'rgba(255,255,255, 0.8)',
+    'white-tertiary': 'rgba(255,255,255, 0.6)',
+    'grey-darkest': '#415271',
+    'grey-darker': '#617193',
+    'grey-dark': '#92A2C6',
+    'grey-mid': '#DFE6FD',
+    'grey-light': '#EFF0FD',
+    'grey-off-white': '#F5F6FE',
+    'white': '#ffffff',
+    'midnight-blue': '#000042',
+    'link-blue': '#3245EC',
+    'yellow-dark': '#EEC236',
+    'yellow': '#FFDE00',
+    'yellow-light': '#FEE981',
+    'turquoise-dark': '#23BAC2',
+    'turquoise': '#13D7D5',
+    'turquoise-light': '#8CE9E8',
+    'bright-blue-dark': '#1763D7',
+    'bright-blue': '#0E71F7',
+    'bright-blue-light': '#82B3F8',
+    'violet-dark': '#6F35BA',
+    'violet': '#8741D8',
+    'violet-light': '#AD83E3',
+    'purple-dark': '#6053D3',
+    'purple': '#7072FD',
+    'purple-light': '#96A2FB',
+    'magenta-dark': '#B925A3',
+    'magenta': '#F624B5',
+    'magenta-light': '#F778CE'
   },
   textSizes: {
     'xs': .75,
@@ -114,15 +146,11 @@ var config = {
     // 16px
     'lg': 1.125,
     // 18px
-    'xl': 1.25,
-    // 20px
-    '2xl': 1.5,
+    'xl': 1.5,
     // 24px
-    '3xl': 1.875,
-    // 30px
-    '4xl': 2.25,
-    // 36px
-    '5xl': 3 // 48px
+    '2xl': 2,
+    // 32px
+    '3xl': 3 // 48px
 
   }
 };
@@ -37680,6 +37708,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_primitives__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-primitives */ "./node_modules/react-primitives/index.js");
 /* harmony import */ var react_primitives__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_primitives__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "../config.js");
+/* harmony import */ var _utils_convertUnits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/convertUnits */ "./src/utils/convertUnits.js");
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -37688,6 +37717,124 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+
+var lsSketch = _objectSpread({}, _config__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_utils_convertUnits__WEBPACK_IMPORTED_MODULE_4__["default"])(_config__WEBPACK_IMPORTED_MODULE_3__["default"]));
+
+var ColorSwatch = function ColorSwatch(_ref) {
+  var hexCode = _ref.hexCode;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_primitives__WEBPACK_IMPORTED_MODULE_2__["View"], null, "hi");
+};
+
+var ArtboardTile = function ArtboardTile(_ref2) {
+  var coord = _ref2.coord,
+      name = _ref2.name,
+      children = _ref2.children,
+      style = _ref2.style;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_sketchapp__WEBPACK_IMPORTED_MODULE_1__["Artboard"], {
+    name: name,
+    style: _objectSpread({
+      width: 480,
+      height: 600,
+      top: coord.y,
+      left: coord.x,
+      position: 'absolute',
+      padding: 48
+    }, style)
+  }, children);
+};
+
+var TypographyArtboard = function TypographyArtboard() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ArtboardTile, {
+    name: "Typography",
+    coord: {
+      x: 0,
+      y: 0
+    }
+  }, Object.keys(lsSketch.textSizes).reverse().map(function (textSize) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_primitives__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+      style: {
+        fontFamily: "Guyot Headline",
+        color: lsSketch.colors['black-primary'],
+        fontSize: lsSketch.textSizes[textSize]
+      }
+    }, "Connecting the world of genomic data");
+  }));
+};
+
+var Swatch = function Swatch(_ref3) {
+  var name = _ref3.name,
+      hex = _ref3.hex;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_primitives__WEBPACK_IMPORTED_MODULE_2__["View"], {
+    name: "Swatch ".concat(name),
+    style: {
+      height: 78,
+      width: 78,
+      margin: 6,
+      backgroundColor: hex,
+      padding: 8
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_primitives__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+    name: "Swatch Name",
+    style: {
+      color: "#000000",
+      fontWeight: 'bold'
+    }
+  }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_primitives__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+    name: "Swatch Hex",
+    style: {
+      color: "#000000"
+    }
+  }, hex));
+};
+
+var ColorsArtboard = function ColorsArtboard(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ArtboardTile, {
+    name: "Color Swatches",
+    coord: {
+      x: 600,
+      y: 0
+    },
+    style: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      padding: 42
+    }
+  }, Object.keys(lsSketch.colors).map(function (swatch) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Swatch, {
+      name: swatch,
+      hex: lsSketch.colors[swatch]
+    });
+  }));
+};
+
+var Document = function Document(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_sketchapp__WEBPACK_IMPORTED_MODULE_1__["Page"], {
+    style: {
+      flex: 1
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TypographyArtboard, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ColorsArtboard, null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (function (context) {
+  Object(react_sketchapp__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Document, null), context.document.currentPage());
+});
+
+/***/ }),
+
+/***/ "./src/utils/convertUnits.js":
+/*!***********************************!*\
+  !*** ./src/utils/convertUnits.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return sketchifyUnits; });
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function convertTextSizes(textSizes, baseSize) {
   var obj = _objectSpread({}, textSizes);
@@ -37703,17 +37850,6 @@ function sketchifyUnits(config) {
   obj.textSizes = _objectSpread({}, convertTextSizes(config.textSizes, 16));
   return obj;
 }
-
-var lsSketch = _objectSpread({}, _config__WEBPACK_IMPORTED_MODULE_3__["default"], sketchifyUnits(_config__WEBPACK_IMPORTED_MODULE_3__["default"]));
-
-/* harmony default export */ __webpack_exports__["default"] = (function (context) {
-  Object(react_sketchapp__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_primitives__WEBPACK_IMPORTED_MODULE_2__["Text"], {
-    style: {
-      color: lsSketch.colors.blue,
-      fontSize: lsSketch.textSizes['3xl']
-    }
-  }, "hello world!"), context.document.currentPage());
-});
 
 /***/ })
 
