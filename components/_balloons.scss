@@ -280,4 +280,7 @@ button[data-balloon] {
             width: 100%;
         }
     }
+    &[data-balloon-break]::before {
+    white-space: pre-wrap;
+}
 }
